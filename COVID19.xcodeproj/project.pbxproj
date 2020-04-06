@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0605A42439E3CF0079B1E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0605A32439E3CF0079B1E7 /* MainViewController.swift */; };
+		7A0605A62439E3F90079B1E7 /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0605A52439E3F90079B1E7 /* StatViewController.swift */; };
+		7A0605A82439E40E0079B1E7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0605A72439E40E0079B1E7 /* HistoryViewController.swift */; };
+		7A2FE2F42439EDEA0086939A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FE2F32439EDEA0086939A /* MapViewController.swift */; };
 		7AD4A5B92439D6CD00E71BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A5B82439D6CD00E71BBB /* AppDelegate.swift */; };
 		7AD4A5BB2439D6CD00E71BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A5BA2439D6CD00E71BBB /* SceneDelegate.swift */; };
-		7AD4A5BD2439D6CD00E71BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A5BC2439D6CD00E71BBB /* ViewController.swift */; };
+		7AD4A5BD2439D6CD00E71BBB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A5BC2439D6CD00E71BBB /* MainTabBarController.swift */; };
 		7AD4A5C02439D6CD00E71BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4A5BE2439D6CD00E71BBB /* Main.storyboard */; };
 		7AD4A5C32439D6CD00E71BBB /* COVID19.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4A5C12439D6CD00E71BBB /* COVID19.xcdatamodeld */; };
 		7AD4A5C52439D6D000E71BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4A5C42439D6D000E71BBB /* Assets.xcassets */; };
@@ -17,10 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0605A32439E3CF0079B1E7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7A0605A52439E3F90079B1E7 /* StatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
+		7A0605A72439E40E0079B1E7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		7A2FE2F32439EDEA0086939A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7AD4A5B52439D6CD00E71BBB /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD4A5B82439D6CD00E71BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AD4A5BA2439D6CD00E71BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AD4A5BC2439D6CD00E71BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AD4A5BC2439D6CD00E71BBB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7AD4A5BF2439D6CD00E71BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AD4A5C22439D6CD00E71BBB /* COVID19.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = COVID19.xcdatamodel; sourceTree = "<group>"; };
 		7AD4A5C42439D6D000E71BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +68,11 @@
 			children = (
 				7AD4A5B82439D6CD00E71BBB /* AppDelegate.swift */,
 				7AD4A5BA2439D6CD00E71BBB /* SceneDelegate.swift */,
-				7AD4A5BC2439D6CD00E71BBB /* ViewController.swift */,
+				7AD4A5BC2439D6CD00E71BBB /* MainTabBarController.swift */,
+				7A0605A32439E3CF0079B1E7 /* MainViewController.swift */,
+				7A2FE2F32439EDEA0086939A /* MapViewController.swift */,
+				7A0605A52439E3F90079B1E7 /* StatViewController.swift */,
+				7A0605A72439E40E0079B1E7 /* HistoryViewController.swift */,
 				7AD4A5BE2439D6CD00E71BBB /* Main.storyboard */,
 				7AD4A5C42439D6D000E71BBB /* Assets.xcassets */,
 				7AD4A5C62439D6D000E71BBB /* LaunchScreen.storyboard */,
@@ -141,10 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AD4A5BD2439D6CD00E71BBB /* ViewController.swift in Sources */,
+				7AD4A5BD2439D6CD00E71BBB /* MainTabBarController.swift in Sources */,
 				7AD4A5B92439D6CD00E71BBB /* AppDelegate.swift in Sources */,
 				7AD4A5BB2439D6CD00E71BBB /* SceneDelegate.swift in Sources */,
 				7AD4A5C32439D6CD00E71BBB /* COVID19.xcdatamodeld in Sources */,
+				7A0605A62439E3F90079B1E7 /* StatViewController.swift in Sources */,
+				7A0605A82439E40E0079B1E7 /* HistoryViewController.swift in Sources */,
+				7A0605A42439E3CF0079B1E7 /* MainViewController.swift in Sources */,
+				7A2FE2F42439EDEA0086939A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,35 +16,24 @@ class MainTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
         
         tabBar.tintColor = .black
+        view.backgroundColor = .white
         
-        let mainVC = MainViewController()
-        let mainNVC = UINavigationController(rootViewController: mainVC)
-        mainNVC.tabBarItem.image = #imageLiteral(resourceName: "tbMain")
-        mainNVC.tabBarItem.title = "Главное"
-        mainNVC.navigationItem.title = "Главное"
-        
-        let statVC = StatViewController()
-        let statNVC = UINavigationController(rootViewController: statVC)
-        statNVC.tabBarItem.image = #imageLiteral(resourceName: "tbChart")
-        statNVC.tabBarItem.title = "Статистика"
-        statNVC.navigationItem.title = "Статистика"
-        
-        let historyVC = HistoryViewController()
-        let historyNVC = UINavigationController(rootViewController: historyVC)
-        historyNVC.tabBarItem.image = #imageLiteral(resourceName: "tbHistory")
-        historyNVC.tabBarItem.title = "История"
-        historyNVC.navigationItem.title = "История"
-        
-        let mapVC = MapViewController()
-        let mapNVC = UINavigationController(rootViewController: mapVC)
-        mapNVC.tabBarItem.image = #imageLiteral(resourceName: "tbMap")
-        mapNVC.tabBarItem.title = "Карта"
-        mapNVC.navigationItem.title = "Карта"
-        
-        
-        viewControllers = [mainNVC, statNVC, historyNVC, mapNVC]
+        viewControllers = [
+            generate(viewController: MainViewController(), image: #imageLiteral(resourceName: "tbMain"), title: "Главная"),
+            generate(viewController: StatViewController(), image: #imageLiteral(resourceName: "tbChart"), title: "Статистика"),
+            generate(viewController: StatViewController(), image: #imageLiteral(resourceName: "tbHistory"), title: "История"),
+            generate(viewController: StatViewController(), image: #imageLiteral(resourceName: "tbMap"), title: "Карта"),
+        ]
     }
 
+    private func generate(viewController: UIViewController, image: UIImage, title: String) -> UIViewController {
+        let navigationViewController = UINavigationController(rootViewController: viewController)
+        navigationViewController.tabBarItem.image = image
+        navigationViewController.tabBarItem.title = title
+        viewController.navigationItem.title = title
+        navigationViewController.navigationBar.prefersLargeTitles = true
+        return navigationViewController
+    }
 
 }
 
